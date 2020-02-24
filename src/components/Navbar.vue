@@ -10,28 +10,23 @@
 
     <v-divider></v-divider>
 
-    <v-list dense nav>
-      <v-list-item link>
-        <v-list-item-icon>
-          <v-icon> item.icon </v-icon>
-        </v-list-item-icon>
-
-        <v-list-item-content>
-          <v-list-item-title>item.title </v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-    </v-list>
+    <NavigationList />
   </v-navigation-drawer>
 </template>
 <script lang="ts">
 import Vue from 'vue';
 import { mapState } from 'vuex';
+import NavigationList from './navigation/NavigationList.vue';
 
 export default Vue.extend({
   name: 'MainNavbar',
 
+  components: {
+    NavigationList,
+  },
+
   computed: {
-    ...mapState('AppModule', ['navDrawerOpen']),
+    ...mapState('AppModule', ['navDrawerOpen', 'navItems']),
   },
 });
 </script>

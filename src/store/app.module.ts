@@ -1,9 +1,12 @@
+import { navItems } from '@/store/constants';
+
 const appModule = {
   namespaced: true,
 
   state: {
     navDrawerOpen: false,
     isDarkMode: false,
+    navItems,
   },
 
   mutations: {
