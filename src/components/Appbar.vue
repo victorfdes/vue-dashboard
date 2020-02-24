@@ -1,6 +1,44 @@
 <template>
   <v-app-bar app :dark="isDarkMode">
-    <v-btn icon @click="toggleNavrawer"><v-icon>mdi-menu</v-icon></v-btn>
+    <v-app-bar-nav-icon @click="toggleNavrawer"></v-app-bar-nav-icon>
+    <v-toolbar-title>Title</v-toolbar-title>
+    <v-spacer></v-spacer>
+
+    <v-btn icon><v-icon>mdi-magnify</v-icon></v-btn>
+
+    <v-badge
+      :content="3"
+      :value="3"
+      color="green"
+      overlap
+    >
+      <v-icon>mdi-email</v-icon>
+    </v-badge>
+
+    <v-badge
+      :content="3"
+      :value="3"
+      color="green"
+      overlap
+    >
+      <v-icon>mdi-email</v-icon>
+    </v-badge>
+
+    <v-badge
+      :content="3"
+      :value="3"
+      color="green"
+      overlap
+    >
+      <v-icon>mdi-email</v-icon>
+    </v-badge>
+
+    <v-avatar>
+      <img
+        src="https://cdn.vuetifyjs.com/images/john.jpg"
+        alt="John"
+      >
+    </v-avatar>
   </v-app-bar>
 </template>
 <script lang="ts">
