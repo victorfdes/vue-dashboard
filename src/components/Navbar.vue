@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer app :mini-variant="navDrawerOpen">
+  <v-navigation-drawer app :mini-variant="navDrawerOpen" :dark="isDarkMode">
     <div class="title d-flex align-center justify-center">Vue Dashboard</div>
 
     <v-divider></v-divider>
@@ -20,7 +20,11 @@ export default Vue.extend({
   },
 
   computed: {
-    ...mapState('AppModule', ['navDrawerOpen', 'navItems']),
+    ...mapState('AppModule', [
+      'navDrawerOpen',
+      'navItems',
+      'isDarkMode',
+    ]),
   },
 });
 </script>
