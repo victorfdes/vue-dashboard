@@ -1,12 +1,6 @@
 <template>
   <v-navigation-drawer app :mini-variant="navDrawerOpen">
-    <v-list-item>
-      <v-list-item-content>
-        <v-list-item-title class="title">
-          Vue Dashboard
-        </v-list-item-title>
-      </v-list-item-content>
-    </v-list-item>
+    <div class="title d-flex align-center justify-center">Vue Dashboard</div>
 
     <v-divider></v-divider>
 
@@ -30,3 +24,8 @@ export default Vue.extend({
   },
 });
 </script>
+<style lang="scss" scoped>
+.title {
+  height: 64px;
+}
+</style>
