@@ -16,15 +16,7 @@
       <v-icon>mdi-email-outline</v-icon>
     </v-badge>
 
-    <v-badge
-      :content="3"
-      :value="3"
-      color="green"
-      overlap
-      class="mr-5"
-    >
-      <v-icon>mdi-message-outline</v-icon>
-    </v-badge>
+    <ChatMenu />
 
     <v-badge
       :content="3"
@@ -36,20 +28,22 @@
       <v-icon>mdi-cart-outline</v-icon>
     </v-badge>
 
-    <v-avatar>
-      <img
-        src="https://cdn.vuetifyjs.com/images/john.jpg"
-        alt="John"
-      >
-    </v-avatar>
+    <UserMenu />
   </v-app-bar>
 </template>
 <script lang="ts">
 import Vue from 'vue';
 import { mapMutations, mapState } from 'vuex';
+import ChatMenu from './appbar/ChatMenu.vue';
+import UserMenu from './appbar/UserMenu.vue';
 
 export default Vue.extend({
   name: 'MainAppbar',
+
+  components: {
+    ChatMenu,
+    UserMenu,
+  },
 
   computed: {
     ...mapState('AppModule', [
