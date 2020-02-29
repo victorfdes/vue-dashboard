@@ -1,5 +1,5 @@
 <template>
-  <v-list-item link>
+  <v-list-item link :to="getRoute">
     <v-list-item-icon v-if="hasIcon">
     <v-icon>{{ navItem.icon }}</v-icon>
    </v-list-item-icon>
@@ -26,6 +26,10 @@ export default Vue.extend({
   computed: {
     hasIcon() {
       return !!this.navItem.icon;
+    },
+
+    getRoute() {
+      return this.navItem.route ? this.navItem.route : null;
     },
   },
 });

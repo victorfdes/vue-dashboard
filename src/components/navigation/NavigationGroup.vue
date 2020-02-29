@@ -1,8 +1,5 @@
 <template>
-  <v-list-group
-    no-action
-    value="true"
-  >
+  <v-list-group no-action>
     <template v-slot:activator>
       <v-list-item-icon>
         <v-icon>{{ navItem.icon }}</v-icon>

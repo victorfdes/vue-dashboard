@@ -10,14 +10,31 @@ const routes = [
     name: 'Dashboard',
     component: Dashboard,
   },
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-  // },
+  {
+    path: '/tickets',
+    name: 'Tickets',
+    component: () => import(/* webpackChunkName: "tickets" */ '@/views/tickets/Tickets.vue'),
+  },
+  {
+    path: '/live-chat',
+    name: 'Live Chat',
+    component: () => import(/* webpackChunkName: "live-chat" */ '@/views/live-chat/LiveChat.vue'),
+  },
+  {
+    path: '/shop/analytics',
+    name: 'Analytics',
+    component: () => import(/* webpackChunkName: "shop-analytics" */ '@/views/shop/analytics/ShopAnalytics.vue'),
+  },
+  {
+    path: '/shop/customers',
+    name: 'Customers',
+    component: () => import(/* webpackChunkName: "shop-customers" */ '@/views/shop/customers/ShopCustomers.vue'),
+  },
+  {
+    path: '/shop/inventory',
+    name: 'Inventory',
+    component: () => import(/* webpackChunkName: "shop-inventory" */ '@/views/shop/inventory/ShopInventory.vue'),
+  },
 ];
 
 const router = new VueRouter({
