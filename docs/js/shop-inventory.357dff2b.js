@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["shop-inventory"],{"950c":function(n,e,t){"use strict";t.r(e);var o=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",{},[n._v(" Inventory ")])},r=[],c={},l=c,s=t("2877"),u=Object(s["a"])(l,o,r,!1,null,null,null);e["default"]=u.exports}}]);
+//# sourceMappingURL=shop-inventory.357dff2b.js.map
