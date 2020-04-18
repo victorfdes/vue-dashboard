@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.f9949678df2abbf47530e262cb108d59.js"
+  "/vue-dashboard/precache-manifest.60334a668d7e00288905e4defdb3f471.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-dashboard"});
